@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <EditText
+            android:id="@+id/sname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please Enter Your Name"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColorHint="#FF0000"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please Enter Your College Name"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColorHint="#FF0000"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/ename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please Enter Your e-mail"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColorHint="#FF0000" />
+
+        <EditText
+            android:id="@+id/sno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please Enter Your Mobile Number"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColorHint="#FF0000"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:id="@+id/branch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/branch2" />
+
+        <TextView
+            android:id="@+id/yos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skill Set"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI and ML" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:onClick="submitdata" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Display Results here..."
+            android:textColor="#E91E63"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</ScrollView>

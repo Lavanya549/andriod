@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_item"
+        android:title="Search"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/upload_item"
+        android:title="Upload" />
+
+    <item
+        android:id="@+id/copy_item"
+        android:title="Copy"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/print_item"
+        android:title="Print" />
+
+    <item
+        android:id="@+id/share_item"
+        android:title="Share"
+        app:showAsAction="ifRoom" />
+
+    <!-- You can continue adding more items here -->
+    <item
+        android:id="@+id/bookmark_item"
+        android:title="BookMark" />
+</menu>
